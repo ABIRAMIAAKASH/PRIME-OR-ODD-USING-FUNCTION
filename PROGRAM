@@ -1,0 +1,23 @@
+#include <stdio.h>
+void prime(int a)
+{
+    int b=2,f=1;
+    while(b<=a/2)
+        {
+            if(a%2==0)
+               { 
+                   f=0;
+                break;     
+               }
+            else
+            b++;
+        }
+    printf(f==1?"prime":"not prime");
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    prime(a);
+    return 0;
+}
